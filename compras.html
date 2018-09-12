@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Compras-Corporacion Scout de Antioqua</title>
+  <link rel="stylesheet" href="css/compras.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body style=" background: url(images/bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;">
+  <!--menu-->
+
+  <nav>
+    <img src="images\logocsa2018.png" id="logo">
+    <ul>
+      <li><a href='index.html'>INICIO</a></li>
+      <li><a href='unidades.html'>UNIDADES</a></li>
+      <li><a href='compras.html'>COMPRAS</a></li>
+      <li><a href='contactenos.html'>CONTACTENOS</a></li>
+    </ul>
+  </nav>
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="conte">
+    <form id="parrafo-uno">
+      <h4>Inicio de sesión/Registro de usuarios</h4>
+      <div id="nombreU">Nombre:</div>
+      <input type="text" aria-label="First name" class="form-control" id="txtNombre" placeholder="Ingrese su nombre">
+      <div id="correoU">Correo elestronico:</div>
+      <input type="text" aria-label="First name" class="form-control" id="txtCorreo" placeholder="Ingrese su correo">
+      <div id="contraseñaU">Contraseña:</div>
+      <input type="password" aria-label="First name" class="form-control" id="txtContraseña" placeholder="Ingrese su contraseña">
+      <div id="contraseñaCU">Confirme la contraseña:</div>
+      <input type="password" aria-label="First name" class="form-control" id="txtContraseñaP" placeholder="Confirme su contraseña">
+      <div id="saldoU">Saldo:</div>
+      <input type="text" aria-label="First name" class="form-control" id="txtSaldo" placeholder="Recargue su saldo"><br>
+      <input class="btn btn-primary" onclick="iniciarSesion()" type="button" id="btnIniciarSesion" value="Iniciar sesion">
+      <input class="btn btn-primary" onclick="registrarse()" type="button" id="btnRegistrarse" value="Registrarse"><br><br>
+      <input class="btn btn-primary" onclick="registrarUsuario()" type="button" id="btnRegistrar" value="Registrar"><br>
+      <input class="btn btn-primary" onclick="updateUsuario()" type="button" id="btnActualizar" value="Actualizar">
+      <div id="infoUsuarioProductos"></div>
+    </form>
+    
+    <form id="parrafo-dos">
+      <h4>Registro de productos</h4>
+      <input type="hidden" id="correoSesion">
+      <input type="text" aria-label="First name" class="form-control" id="txtNombreProducto" placeholder="Ingrese el nombre del producto">
+      <input type="text" aria-label="First name" class="form-control" id="txtPrecioProducto" placeholder="Ingrese el precio del producto">
+      <input type="text" aria-label="First name" class="form-control" id="txtStockProducto" placeholder="Ingrese la cantidad disponible"><br>
+      <input class="btn btn-primary" onclick="registrarProducto()" type="button" id="btnRegistrarProducto" value="Registrar producto">
+      <div id="contActualizarProducto">
+      </div>
+    </form>
+    
+  </div>
+  <br>
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="tablas">
+
+    <!--USUARIOS-->
+    <div id="contenido">
+      <div class="titulo"><b>Usuarios</b></div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th><b>Nombre</b></th>
+            <th><b>Correo</b></th>
+            <th><b>Acciones</b></th>
+
+          </tr>
+        </thead>
+        <tbody id="contenedorUsuarios">
+
+        </tbody>
+      </table>
+    </div>
+
+    <!--PRODUCTOS-->
+    <div id="contenido">
+      <div class="titulo"><b>Productos</b></div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th><b>Producto</b></th>
+            <th><b>Precio</b></th>
+            <th><b>Vendedor</b></th>
+            <th><b>Stock</b></th>
+            <th><b>Acciones</b></th>
+          </tr>
+        </thead>
+        <tbody id="contenedorProductos">
+
+        </tbody>
+      </table>
+    </div>
+
+    <!--CARRITO-->
+    <div id="contenido">
+      <div class="titulo"><b>Carrito de compras</b></div>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <!--<th><b>ID</b></th>-->
+            <th><b>Producto</b></th>
+            <th><b>Precio</b></th>
+            <th><b>Actciones</b></th>
+          </tr>
+        </thead>
+        <tbody id="contenedorCarrito">
+  
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <!--SCRIPTS-->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js\jquery.slides.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js\jquery.slides.min.js"></script>
+</body>
+
+</html>
