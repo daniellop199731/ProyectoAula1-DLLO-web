@@ -313,12 +313,12 @@ var app = new function() {
     document.getElementById('parrafo-uno').style.height = '550px'
     document.getElementById('parrafo-dos').style.height = '550px'
 
-  //Se habilitan los subtitulos guia para la edicion de usuarios
-   document.getElementById('nombreU').style.display = 'inline'
-   document.getElementById('correoU').style.display = 'inline'
-   document.getElementById('contraseñaU').style.display = 'inline'
-   document.getElementById('contraseñaCU').style.display = 'inline'
-   document.getElementById('saldoU').style.display = 'inline'
+    //Se habilitan los subtitulos guia para la edicion de usuarios
+    document.getElementById('nombreU').style.display = 'inline'
+    document.getElementById('correoU').style.display = 'inline'
+    document.getElementById('contraseñaU').style.display = 'inline'
+    document.getElementById('contraseñaCU').style.display = 'inline'
+    document.getElementById('saldoU').style.display = 'inline'
 
     //Se hace que aparezca el input 'Ingrese su nombre'
     document.getElementById('txtNombre').style.display = 'inline'
